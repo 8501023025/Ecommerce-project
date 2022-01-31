@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+        {{info.name}}
+        <img src="{{info.image.url}}" alt="">
+      <h4>Rs={{info.price}}</h4> 
+        {{info.description}}
+
+        <div>
+          <form action="" method="post">
+            {% csrf_token %}
+            <button class="form-control" id = "inputQuantity" type ="num" value="1" >
+              <i class="bi-cart-fill-me-1"></i>
+              
+              Add to cart
+
+              
+            </button>
+
+          </form>
+        </div>
+
+
+
+
+
+</body>
+</html>
